@@ -3,7 +3,7 @@
     <div class="main">
       <form novalidate="novalidate" onsubmit="return false;" :class="getFormClass">
         <div role="search" :class="getClassWrapper">
-          <input type="search" name="search" :placeholder="getPlaceholder" autocomplete="off" required="required" :class="getClassInputPlaceholder" tabindex="-1">
+          <input type="search" name="search" placeholder="Hello World" autocomplete="off" required="required" :class="getClassInputPlaceholder" tabindex="-1">
           <input :disabled="disabled" @click="emitClickInput" @keyup='changeText' v-model='textVal' type="search" :name="name" placeholder="" autocomplete="off" required="required" :class="getClassInput" :autofocus="autofocus">
           <button @click="emitClickButton" type="submit" :class="getClassSubmit" tabindex="-1">
               <svg role="img" aria-label="Search">
